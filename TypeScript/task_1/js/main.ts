@@ -15,4 +15,18 @@ const teacher3: Teacher = {
   contract: false, // Dynamic attribute
 };
 
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
 console.log(teacher3);
+
+const director1: Directors = {
+  firstName: "John",
+  lastName: "Doe",
+  location: "London",
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
+console.log(director1);
