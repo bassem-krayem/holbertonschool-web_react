@@ -51,3 +51,13 @@ function executeWork(employee) {
 }
 executeWork(createEmployee(200));
 executeWork(createEmployee(1000));
+function teachClass(todayClass) {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    }
+    else {
+        return "Teaching history";
+    }
+}
+console.log(teachClass("Math"));
+console.log(teachClass("History"));
