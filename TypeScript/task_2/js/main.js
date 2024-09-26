@@ -37,3 +37,17 @@ function createEmployee(salary) {
 console.log(createEmployee(200));
 console.log(createEmployee(1000));
 console.log(createEmployee("$500"));
+function isDirector(employee) {
+    return employee.workDirectorTasks !== undefined;
+}
+// Function to execute work based on the employee's type
+function executeWork(employee) {
+    if (isDirector(employee)) {
+        console.log(employee.workDirectorTasks()); // Director's work method
+    }
+    else {
+        console.log(employee.workTeacherTasks()); // Teacher's work method
+    }
+}
+executeWork(createEmployee(200));
+executeWork(createEmployee(1000));
